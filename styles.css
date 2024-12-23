@@ -1,14 +1,35 @@
 body {
-  font-family: Arial, sans-serif;
+  display: flex;
   margin: 0;
-  padding: 0;
   height: 100vh;
   background-color: #f5f5f5;
 }
 
-#editor-container {
-  width: 100%;
+#file-explorer {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
   height: 100%;
+}
+
+#file-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-item {
+  padding: 8px;
+  cursor: pointer;
+  margin: 5px 0;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+#editor-container {
+  flex-grow: 1;
+  padding: 10px;
 }
 
 #editor {
